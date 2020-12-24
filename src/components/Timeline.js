@@ -6,15 +6,15 @@ import PropTypes from 'prop-types';
 
 const Timeline = (props) => {
   const eventComponents = props.events.map((event, i) => {
-    return (
-      <li key={i}>
-        < TimelineEvent person={event.person} status={event.status} timestamp={event.timestamp} />
-      </li>
-    );
+    return <TimelineEvent 
+    key = {i} 
+    person = {event.person} 
+    status = {event.status}
+    timestamp = {event.timestamp} />
   });
 
   return (
-    <ul className="event-components">
+    <ul className="timeline">
       {eventComponents}
     </ul>
   );
@@ -22,7 +22,7 @@ const Timeline = (props) => {
 
 
 Timeline.propTypes = {
-  events: PropTypes.array
+  events: PropTypes.array.isRequired
 };
 
 export default Timeline;
