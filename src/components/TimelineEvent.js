@@ -5,8 +5,6 @@ import PropTypes from 'prop-types';
 
 const TimelineEvent = (props) => {
   
-  
-  
   return (
     <div>
       <li> {props.person} </li>
@@ -16,12 +14,12 @@ const TimelineEvent = (props) => {
       </li >
     </div>
   );
-
-  // TimelineEvent.propTypes = {
-  //   person: PropTypes.string.isRequired,
-  //   status: PropTypes.string,
-  //   timestamp: PropTypes.instanceOf(timestamp)
-  // };
 };
+
+  TimelineEvent.propTypes = {
+    person: PropTypes.string.isRequired,
+    status: PropTypes.string,
+    timestamp: PropTypes.instanceOf(Timestamp)
+  };
 
 export default TimelineEvent;

@@ -21,8 +21,8 @@ const Timeline = (props) => {
 };
 
 
-// Timeline.propTypes = {
-//   events: PropTypes.instanceOf(array)
-// };
+Timeline.propTypes = {
+  events: PropTypes.array
+};
 
 export default Timeline;
