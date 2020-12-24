@@ -6,12 +6,12 @@ import PropTypes from 'prop-types';
 const TimelineEvent = (props) => {
   
   return (
-    <div>
-      <li> {props.person} </li>
-      <li> {props.status} </li>
-      < li > 
+    <div className="timeline-event">
+      <ul className="event-person"> {props.person} </ul>
+      <ul className="event-status"> {props.status} </ul>
+      < ul className="event-time"> 
         < Timestamp time = {props.timestamp}/>
-      </li >
+      </ul >
     </div>
   );
 };
