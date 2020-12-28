@@ -1,13 +1,10 @@
 import React from 'react';
-import logo from './logo.svg';
+import Logo from './logo.svg';
 import './App.css';
 import timelineData from './data/timeline.json';
 import Timeline from './components/Timeline';
 
 function App() {
-  // console.log(timelineData);
-
-  
   return (
     <div className="App">
       <header className="App-header">
